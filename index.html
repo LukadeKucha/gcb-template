@@ -369,6 +369,18 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 24px 0;
+            }
+
+            .section {
+                padding: 48px 0;
+            }
+
+            .pricing-body {
+                padding: 12px 24px;
+            }
+
             .header .container {
                 flex-direction: column;
                 gap: 24px;
@@ -402,6 +414,89 @@
                 justify-content: center;
             }
         }
+
+        .mobile-cta-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 0;
+            z-index: 9999;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            background: #fff;
+        }
+
+        .mobile-cta-footer a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s ease;
+        }
+
+        .mobile-cta-footer a:hover {
+            transform: scale(1.2);
+        }
+
+        .mobile-cta-footer .btn-whatsapp {
+            background: #25D366;
+        }
+
+        .mobile-cta-footer .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+
+        .mobile-cta-footer .btn-viber {
+            background: #59267c;
+        }
+
+        .mobile-cta-footer .btn-viber:hover {
+            background: #472057;
+        }
+
+        .mobile-cta-footer .btn-telegram {
+            background: #0088cc;
+        }
+
+        .mobile-cta-footer .btn-telegram:hover {
+            background: #006699;
+        }
+
+        .mobile-cta-footer .btn-email {
+            background: #4285F4;
+        }
+
+        .mobile-cta-footer .btn-email:hover {
+            background: #3367D6;
+        }
+
+        .mobile-cta-footer .btn-phone {
+            background: #1a1a1a;
+        }
+
+        .mobile-cta-footer .btn-phone:hover {
+            background: #333;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-cta-footer {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .cta-section {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -413,8 +508,8 @@
                     alt="GeorgiaCB Logo">
             </a>
             <div class="header-contact">
-                <a href="tel:+995599007685" class="header-phone">
-                    <i class="bi bi-telephone-fill"></i> +995-599-007-685
+                <a href="tel:+995558103494" class="header-phone">
+                    <i class="bi bi-telephone-fill"></i> +995 558 10 34 94
                 </a>
             </div>
         </div>
@@ -429,37 +524,6 @@
     </section>
 
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">ჩვენი სერვისები</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-airplane-fill"></i>
-                    </div>
-                    <h3>ავია გადაზიდვა</h3>
-                    <p>ორივე მიმართულებით საქართველო-რუსეთი, რუსეთი-საქართველო სწრაფი და უსაფრთხო გადაზიდვა</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-shield-check"></i>
-                    </div>
-                    <h3>საბროკერო მომსახურება</h3>
-                    <p>სრული საბაჟო მომსახურება როგორც საქართველოში, ასევე რუსეთში. პროფესიონალი გუნდი თქვენს
-                        მომსახურებაში</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="bi bi-box-seam"></i>
-                    </div>
-                    <h3>სასაწყობო მომსახურება</h3>
-                    <p>უსაფრთხო და თანამედროვე საწყობები თქვენი ტვირთებისთვის. მოქნილი პირობები და ხელმისაწვდომი ფასები
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section bg-light-section">
         <div class="container">
             <h2 class="section-title">ტარიფები - ავია გადაზიდვა</h2>
 
@@ -512,6 +576,39 @@
             <div class="info-box">
                 <p><strong>მნიშვნელოვანი:</strong> ტარიფი მოიცავს ყველა ხარჯს გარდა საბაჟო გადასახადებისა (მისი
                     არსებობის შემთხვევაში). მოცულობითი წონის შემთხვევაში ტარიფი ითვლება მოცულობითი წონით.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section bg-light-section">
+        <div class="container">
+            <h2 class="section-title">ჩვენი სერვისები</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-airplane-fill"></i>
+                    </div>
+                    <h3>ავია გადაზიდვა</h3>
+                    <p>ორივე მიმართულებით საქართველო-რუსეთი, რუსეთი-საქართველო სწრაფი და უსაფრთხო გადაზიდვა</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>საბროკერო მომსახურება</h3>
+                    <p>სრული საბაჟო მომსახურება როგორც საქართველოში, ასევე რუსეთში. პროფესიონალი გუნდი თქვენს
+                        მომსახურებაში</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h3>სასაწყობო მომსახურება</h3>
+                    <p>უსაფრთხო და თანამედროვე საწყობები თქვენი ტვირთებისთვის. მოქნილი პირობები და ხელმისაწვდომი ფასები
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -581,8 +678,8 @@
                     rel="noopener noreferrer">
                     <i class="fab fa-telegram"></i> Telegram
                 </a>
-                <a href="tel:+995599007685" class="social-btn btn-phone">
-                    <i class="bi bi-telephone-fill"></i> +995-599-007-685
+                <a href="tel:+995558103494" class="social-btn btn-phone">
+                    <i class="bi bi-telephone-fill"></i> +995 558 10 34 94
                 </a>
                 <a href="mailto:info@georgiacb.com" class="social-btn btn-email" rel="noopener noreferrer">
                     <i class="fa-solid fa-envelope"></i> ელ-ფოსტა
@@ -590,6 +687,25 @@
             </div>
         </div>
     </section>
+
+    <div class="mobile-cta-footer d-md-none">
+        <a href="https://wa.me/995599007685" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="viber://chat?number=+995599007685" class="btn-viber">
+            <i class="fab fa-viber"></i>
+        </a>
+        <a href="https://t.me/georgiacb_bot" class="btn-telegram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="tel:+995599007685" class="btn-phone">
+            <i class="bi bi-telephone-fill"></i>
+        </a>
+        <a href="mailto:info@georgiacb.com" class="btn-email" rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+
 
     <footer>
         <div class="container">
